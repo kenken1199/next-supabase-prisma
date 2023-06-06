@@ -1,6 +1,6 @@
 import prisma from "../lib/prisma";
 
-export const revalidate = 3600; // revalidate every hour
+// export const revalidate = 3600; // revalidate every hour
 
 async function getCount() {
   const count = await prisma.user.count();
